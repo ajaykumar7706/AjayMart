@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AjayMart | Fresh Groceries. Better Living.</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+/* Homepage hero: AjayMart store + luxury car + CEO visual */
+.homeHero{width:92%;max-width:1320px;margin:24px auto 0;min-height:650px;border-radius:30px;overflow:hidden;position:relative;color:#fff;background-image:linear-gradient(90deg,rgba(12,9,6,.92) 0%,rgba(18,13,8,.76) 28%,rgba(18,13,8,.30) 58%,rgba(18,13,8,.10) 100%),url('images/ajaymart-home-owner.png');background-size:cover;background-position:center center;box-shadow:0 24px 60px rgba(0,0,0,.32)}
+.homeHero::after{content:"";position:absolute;inset:auto 0 0;height:150px;background:linear-gradient(transparent,rgba(8,10,20,.7));pointer-events:none}
+.homeHeroContent{position:relative;z-index:2;max-width:650px;padding:110px 58px 190px}
+.homeHero .eyebrow{color:#c7b8ff;font-size:12px}
+.homeHero h1{font-size:66px;line-height:.98;margin:16px 0 20px;letter-spacing:-2px}
+.homeHero h1 span{color:#a87cff}
+.homeHeroContent>p{max-width:560px;color:#f0f1f8;font-size:17px;line-height:1.7}
+.homeButtons{display:flex;gap:12px;margin:28px 0}
+.homeButtons .btn{padding:14px 20px;border-radius:12px}
+.homeButtons .light{background:#fff;color:#4e39b8}
+.homeTrust{display:flex;flex-wrap:wrap;gap:9px}
+.homeTrust span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px);padding:9px 12px;border-radius:999px;font-size:11px;color:#f5f5fa}
+.homeServiceBar{position:absolute;z-index:3;left:58px;right:58px;bottom:34px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.homeService{background:rgba(12,15,29,.78);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);border-radius:15px;padding:12px 14px}
+.homeService b{display:block;font-size:12px}.homeService small{color:#c7cad6;font-size:9px}
+.homeCategoryStrip{width:calc(92% - 40px);max-width:1240px;margin:-30px auto 0;position:relative;z-index:5;background:#fff;border-radius:20px;padding:14px;display:grid;grid-template-columns:repeat(8,1fr);gap:10px;box-shadow:0 18px 45px rgba(20,23,45,.14)}
+.homeCategory{border:1px solid #eeeef5;border-radius:14px;padding:9px;text-align:center;background:#fff;transition:.25s}.homeCategory:hover{transform:translateY(-4px);box-shadow:0 10px 25px rgba(40,40,70,.1)}
+.homeCategory img{width:100%;height:92px;object-fit:cover;border-radius:10px}.homeCategory b{display:block;font-size:12px;margin-top:7px}.homeCategory small{color:#7057e8;font-size:9px}
+.homeIntro{width:92%;max-width:1180px;margin:62px auto 0;display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.homeIntroCard{background:#fff;border:1px solid #e5e5ed;border-radius:20px;padding:30px}.homeIntroCard h2{font-size:30px;margin:7px 0 12px}.homeIntroCard p{color:#666b7d;line-height:1.7}.homeIntroCard.accent{background:linear-gradient(135deg,#20243a,#34395b);color:#fff}.homeIntroCard.accent p{color:#d8dbea}.homeIntroCard.accent b{color:#a99dff}
+@media(max-width:950px){.homeHero{min-height:610px;background-position:62% center}.homeHeroContent{padding:75px 38px 180px}.homeHero h1{font-size:52px}.homeServiceBar{left:30px;right:30px}.homeCategoryStrip{grid-template-columns:repeat(4,1fr)}.homeIntro{grid-template-columns:1fr}}
+@media(max-width:650px){.homeHero{width:94%;min-height:690px;border-radius:22px;background-position:64% center}.homeHeroContent{padding:55px 24px 210px}.homeHero h1{font-size:43px;letter-spacing:-1px}.homeHeroContent>p{font-size:14px}.homeButtons{flex-direction:column;align-items:flex-start}.homeServiceBar{left:18px;right:18px;bottom:18px;grid-template-columns:1fr 1fr}.homeService{padding:9px}.homeCategoryStrip{width:90%;grid-template-columns:repeat(2,1fr);margin-top:-18px}.homeIntro{width:94%;margin-top:40px}.homeIntroCard{padding:22px}}
+</style>
+</head>
+<body>
+<header>
+<div class="announce">✦ AJAYMART · FRESH SHOPPING, SMARTER EXPERIENCE <span>Open daily · 7 AM – 10 PM</span></div>
+<div class="nav">
+<a class="logo" href="index.html"><b>A</b>Ajay<span>Mart</span></a>
+<div class="search"><input id="globalSearch" placeholder="Search 48+ products..." onkeydown="if(event.key==='Enter')globalSearch()"><button onclick="globalSearch()">Search</button></div>
+<a href="login.html">Account</a><a class="cart" href="cart.html">🛒 <i id="cartCount">0</i></a>
+</div>
+<div class="links"><a class="active" href="index.html">Home</a><a href="products.html">Shop</a><a href="categories.html">Categories</a><a href="offers.html">Offers</a><a href="about.html">About Ajay</a><a href="contact.html">Contact</a><em>● LIVE DEMO</em></div>
+</header>
+<main>
+<section class="homeHero">
+<div class="homeHeroContent">
+<span class="eyebrow">WELCOME TO AJAYMART</span>
+<h1>Fresh groceries.<br><span>Better living.</span></h1>
+<p>Your one-stop supermarket for quality groceries, everyday essentials, great value and a shopping experience built around your home.</p>
+<div class="homeButtons"><a class="btn" href="products.html">Shop fresh today →</a><a class="btn light" href="categories.html">Browse aisles →</a></div>
+<div class="homeTrust"><span>★★★★★ 4.9</span><span>Fresh picks</span><span>Smart cart</span><span>48+ products</span></div>
+</div>
+<div class="homeServiceBar">
+<div class="homeService"><b>✦ Fresh & Quality</b><small>100% carefully selected</small></div>
+<div class="homeService"><b>◈ Best Prices</b><small>Save more every day</small></div>
+<div class="homeService"><b>➜ Fast Delivery</b><small>On time, every time</small></div>
+<div class="homeService"><b>♢ Secure Payment</b><small>Safe & simple checkout</small></div>
+</div>
+</section>
+
+<section class="homeCategoryStrip">
+<a class="homeCategory" href="products.html?category=Fruits"><img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=85" alt="Fruits"><b>Fruits</b><small>12 products</small></a>
+<a class="homeCategory" href="products.html?category=Vegetables"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=85" alt="Vegetables"><b>Vegetables</b><small>12 products</small></a>
+<a class="homeCategory" href="products.html?category=Dairy"><img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=600&q=85" alt="Dairy"><b>Dairy & Eggs</b><small>8 products</small></a>
+<a class="homeCategory" href="products.html?category=Staples"><img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=600&q=85" alt="Staples"><b>Staples</b><small>12 products</small></a>
+<a class="homeCategory" href="products.html?category=Snacks"><img src="images/snacks.jpg" alt="Snacks"><b>Snacks</b><small>12 products</small></a>
+<a class="homeCategory" href="products.html?category=Beverages"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=85" alt="Beverages"><b>Beverages</b><small>8 products</small></a>
+<a class="homeCategory" href="products.html?category=Personal Care"><img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=600&q=85" alt="Personal Care"><b>Personal Care</b><small>10 products</small></a>
+<a class="homeCategory" href="products.html?category=Home Care"><img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=600&q=85" alt="Home Care"><b>Home Care</b><small>8 products</small></a>
+</section>
+
+<section class="homeIntro">
+<div class="homeIntroCard"><span class="eyebrow">THE AJAYMART EXPERIENCE</span><h2>Everything your home needs, in one trusted place.</h2><p>From farm-fresh fruits and vegetables to pantry staples, snacks, beverages and personal care, AjayMart brings everyday shopping together with simple discovery, clear choices and great value.</p><a class="btn" href="products.html">Explore all products →</a></div>
+<div class="homeIntroCard accent"><span class="eyebrow">LED BY AJAY KUMAR TALARI</span><h2>Built with confidence. Served with care.</h2><p>AjayMart combines a modern digital shopping experience with the warmth of a local supermarket in Kurnool, Andhra Pradesh.</p><a class="ceoLink" href="about.html">Meet the Founder & CEO →</a></div>
+</section>
+
+<section class="container section"><div class="head"><div><span class="eyebrow">POPULAR PICKS</span><h2>Fresh from the aisles</h2></div><a href="products.html">Shop all →</a></div><div id="featured" class="products"></div></section>
+</main>
+<footer><div><div><h2>Ajay<span>Mart</span></h2><p>Fresh groceries, everyday essentials and a smarter supermarket experience.</p></div><div><b>Explore</b><a href="products.html">Products</a><a href="offers.html">Offers</a><a href="categories.html">Categories</a></div><div><b>AjayMart</b><a href="about.html">About Ajay</a><a href="contact.html">Contact</a><a href="login.html">Account</a></div><div><b>Visit</b><p>AjayMart, Kurnool, Andhra Pradesh, India<br>9059670366<br>ajaymaheshtalari77@gmail.com</p></div></div><small>© 2026 AjayMart · Super Market</small></footer>
+<div id="toast" class="toast"></div>
+<script src="js/products.js"></script><script src="js/cart.js"></script><script src="js/main.js"></script>
+</body>
+</html>

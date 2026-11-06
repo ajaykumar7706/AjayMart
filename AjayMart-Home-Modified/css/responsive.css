@@ -1,0 +1,18 @@
+@media(max-width:950px){.hero{grid-template-columns:1fr}.heroPhoto{height:360px}.products{grid-template-columns:repeat(3,1fr)}.cats{grid-template-columns:repeat(2,1fr)}.about,.contact,.auth{grid-template-columns:1fr}.authSide{display:none}.offerGrid{grid-template-columns:1fr}footer>div:first-child{grid-template-columns:2fr 1fr 1fr}}@media(max-width:650px){.announce span{display:none}.nav{flex-wrap:wrap;padding:10px 0}.search{order:3;flex-basis:100%}.links{overflow:auto;justify-content:flex-start;white-space:nowrap;gap:22px}.heroText{padding:38px 25px}.hero h1{font-size:44px}.heroPhoto{height:300px}.products,.cats{grid-template-columns:1fr 1fr}.promo{display:block}.promo .btn{margin-top:15px}.features{grid-template-columns:1fr 1fr}.toolbar{flex-direction:column}.title h1{font-size:35px}.about{padding:28px}.about h1{font-size:35px}.aboutPhoto{height:300px}.stats{grid-template-columns:1fr 1fr}.crow{grid-template-columns:55px 1fr auto}.crow>strong,.crow>button{grid-column:3}.total{display:block}.total .btn{width:100%;margin-top:10px}footer>div:first-child{grid-template-columns:1fr 1fr}.auth{padding:20px}.authCard{padding:28px}}
+@media(max-width:950px){
+  .hero{grid-template-columns:1fr}
+  .ceoShowcase{min-height:520px}
+  .ceoPhotoWrap{min-height:420px}
+  .storeIntro{display:block}
+  .storePills{justify-content:flex-start;margin-top:18px}
+}
+@media(max-width:650px){
+  .heroText{padding:42px 25px}
+  .heroTrust{gap:6px}
+  .ceoShowcase{grid-template-columns:1fr;padding:14px}
+  .ceoPhotoWrap{min-height:360px}
+  .ceoInfo{padding:25px 10px}
+  .ceoInfo h2{font-size:29px}
+  .storeIntro{padding:24px}
+  .storeIntroText h2{font-size:25px}
+}
